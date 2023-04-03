@@ -26,7 +26,7 @@ public class MyStepDefs {
         result = calculator.add(value1, value2);
         System.out.print(result);
     }
-    @Then("^I expect the result (\\d+)$")
+    @Then("^I expect the result for add (\\d+)$")
     public void iExpectTheResult(int arg0) {
         Assert.assertEquals(arg0, result);
     }
