@@ -33,10 +33,9 @@ public class MySecondStepDefs {
         }
     }
 
-    @Then("^I expect the result ([-?\\d.]+)$")
+    @Then("^I expect the result ((?:NaN|-?Infinity|[-?\\d.]+))")
     public void iExpectTheResult(String arg0) {
         double expected = Double.parseDouble(arg0);
-        System.out.print(expected);
         if (opt.equals("rvs")){
             Assert.assertEquals(result, expected, 0.0001);
         } else if (opt.equals("sqr")) {

@@ -22,3 +22,7 @@ Feature: SecondCalculator
       | 4     | sqr     | 2        |
       | 1     | rvs     | 1.0      |
       | -2    | rvs     | -0.5     |
+      | -4    | sqr     | NaN      |
+      | 5     | sqr     | 2.236068 |
+      | 0     | sqr     | 0        |
+      | 0     | rvs     | Infinity |
